@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 1rem;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 .content-title {
   margin: 0;
