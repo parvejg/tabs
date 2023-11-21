@@ -2,9 +2,10 @@
   display: flex;
   min-height: 70px;
   background-color: whitesmoke;
-  width: 80%;
+  width: 500px;
   gap: 1rem;
   border: 1px solid darkgray;
+  flex-wrap: nowrap;
 }
 
 .tabs-links {
@@ -15,11 +16,14 @@
   align-items: left;
   font-size: large;
 }
+.tabs-links::before {
+  background-color: grey;
+}
 .tabs-links-content {
   display: flex;
   min-height: 100px;
   background-color: white;
-  width: 80%;
+  width: 500px;
   gap: 1rem;
   border: 1px solid darkgray;
   justify-self: start;
