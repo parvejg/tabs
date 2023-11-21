@@ -1,0 +1,9 @@
+.contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-start;
+}
+.content-title {
+  margin: 0;
+}

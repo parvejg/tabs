@@ -1,0 +1,29 @@
+.tabs-wrapper {
+  display: flex;
+  min-height: 70px;
+  background-color: whitesmoke;
+  width: 80%;
+  gap: 1rem;
+  border: 1px solid darkgray;
+}
+
+.tabs-links {
+  padding: 1rem;
+  border: hidden;
+  min-height: 70px;
+  background-color: whitesmoke;
+  align-items: left;
+  font-size: large;
+}
+.tabs-links-content {
+  display: flex;
+  min-height: 100px;
+  background-color: white;
+  width: 80%;
+  gap: 1rem;
+  border: 1px solid darkgray;
+  justify-self: start;
+}
+.tabs-links:active {
+  background-color: grey;
+}
