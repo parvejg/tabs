@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Tabs.css";
 import { LondonContent, ParisContent, TokyoContent } from "./TabsContents";
 export const Tabs = () => {
-  var [isActive, setActive] = useState();
+  var [isActive, setActive] = useState(true);
   const [color, setColor] = useState("whitesmoke");
   var [isActive2, setActive2] = useState(false);
   var [isActive3, setActive3] = useState(false);
