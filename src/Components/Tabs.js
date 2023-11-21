@@ -1,20 +1,20 @@
 import { useState } from "react";
 import "./Tabs.css";
-import { LondonContent, ParisContent, TokyoContent } from "./TabsContents";
+import { TabsContents } from "./TabsContents";
 export const Tabs = () => {
-  var [isActive, setActive] = useState(true);
-  var [isActive2, setActive2] = useState(false);
-  var [isActive3, setActive3] = useState(false);
   const [currentTab, setCurrentTab] = useState("London");
+  const londonContent = "Londan is the capital city of England";
+  const parisContent = "Paris is the capital of France";
+  const tokyoContent = "ToKyo is the capital of Japan";
   const tabsData =
     currentTab === "London" ? (
-      <LondonContent />
+      <TabsContents contents={londonContent} contentTitle={"London"} />
     ) : currentTab === "Paris" ? (
-      <ParisContent />
+      <TabsContents contents={parisContent} contentTitle={"Paris"} />
     ) : currentTab === "Tokyo" ? (
-      <TokyoContent />
+      <TabsContents contents={tokyoContent} contentTitle={"Tokyo"} />
     ) : (
-      <LondonContent />
+      <TabsContents contents={londonContent} contentTitle={"London"} />
     );
   return (
     <>
